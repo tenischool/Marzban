@@ -67,6 +67,25 @@
             }
         },
         {
+  "tag": "VLESS + WS gcor1",
+  "listen": "0.0.0.0",
+  "port": 15999,
+  "protocol": "vless",
+  "settings": {
+      "clients": [],
+      "decryption": "none"
+    },
+  "streamSettings": {
+    "network": "ws",
+    "wsSettings": { "path":"/admin?ed=1024"},
+    "security": "none"
+  },
+  "sniffing": {
+    "enabled": true,
+    "destOverride": ["http", "tls"]
+  }
+},
+        {
             "tag": "VLESS TCP REALITY",
             "listen": "0.0.0.0",
             "port": 8443,
